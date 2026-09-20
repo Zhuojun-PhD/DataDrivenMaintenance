@@ -34,7 +34,7 @@ This runs all three approaches, in the order ETO, DOT, and IEO, for 50 trials us
 
 All three arguments must be supplied. Holding cost is fixed at `c_h = 1`, opportunity cost at `c_p = 5`, and failure cost is `c_f = factor * c_p`. Thus, `--factor 5` gives `c_f = 25`.
 
-**Device selection:** `main.py` currently sets `device = "cpu"`. To train on the GPU, change that assignment near the top of the file to:
+**Device selection:** `main.py` currently sets `device = "cuda:0"`. To train on the GPU, change that assignment near the top of the file to:
 
 ```python
 device = "cuda:0"
